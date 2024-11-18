@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const User = require('../modles/user'); // Đảm bảo đường dẫn đúng
+const User = require('../modles/user'); // Đảm bảo đường dẫn đúng tới model User
+const bcrypt = require('bcryptjs'); // Import bcryptjs
 
 const router = express.Router();
 
@@ -40,19 +41,20 @@ router.post('/', async (req, res) => {
         // Tìm người dùng trong cơ sở dữ liệu
         const user = await User.findOne({ email });
 
-
         if (!user) {
             errorMessage = 'Invalid email or password';
             return res.render('login', { errorMessage, email });
         }
 
-        // Kiểm tra mật khẩu
-        if (user.password.toString() !== pass) {
+        // So sánh mật khẩu đã mã hóa
+        const match = await bcrypt.compare(pass, user.password);
+
+        if (!match) {
             errorMessage = 'Invalid email or password';
             return res.render('login', { errorMessage, email });
         }
 
-        // Thành công: Lưu trạng thái user vào session (nếu cần)
+        // Thành công: Lưu trạng thái user vào session
         req.session.user = { role: 'user', email: user.email };
 
         // Chuyển hướng đến trang người dùng
