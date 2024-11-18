@@ -1,0 +1,59 @@
+<%- include('layout/header') %>
+<head><link rel="stylesheet" href="/style.css"></head>
+<body>
+    <% if (message) { %>
+        <div class="alert alert-<%= message.type %> mt-4 text-center">
+          <%= message.message %>
+        </div>
+      <% } %>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 mx-auto mt-4">
+                    <div class="card shadow">
+                        <div class="card-header bg-success">
+                            <h3 class="text-light">Edit Product (<%= product.name %>)</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <form action="/index/updateproduct/<%= product._id %>" method="POST" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="form-control form-control-lg"
+                                        placeholder="Enter name" value="<%= product.name %>" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="price">Price</label>
+                                    <input type="number" name="price" class="form-control form-control-lg"
+                                        placeholder="Enter price" value="<%= product.price %>" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="type">Type</label>
+                                    <input type="text" name="type" class="form-control form-control-lg"
+                                        placeholder="Enter type" value="<%= product.type %>" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="image" class="form-label">Select Image</label>
+                                    <input type="file" name="image" class="form-control form-control-lg"  />
+                                    <img src="/<%= product.image %>" width="100" class="img-thumbnail mt-1">
+                                </div>
+                                <input type="hidden" name="old_image" value="<%= product.image %>">
+                                <div class="mb-3 d-grid  ">
+                                    <input type="submit" name="submit" class="btn btn-color btn-lg " value="Update Product" required />
+                                    <!-- <input type="file" name="image" />
+                                    <button type="submit">Add User</button> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Add User Page</h1>
+            </div>
+        </div> -->
+    
+</body>
+
+    <%- include('layout/footer') %>

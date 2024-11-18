@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jolly Jingles - Xmas Joy</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+
+      href="/css/app-wa-8d95b745961f6b33ab3aa1b98a45291a.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+      >
+<!-- link icon -->	
+	<link rel="icon" type="image/png" href="images/icon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/util.css">
+	<link rel="stylesheet" type="text/css" href="/home.css">
+	<link rel="stylesheet" type="text/css" href="/disproduct.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+
+      href="/css/app-wa-8d95b745961f6b33ab3aa1b98a45291a.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+      >
+<!--===============================================================================================-->
+</head>
+
+<style>
+    /* Format Image Team member*/
+    .team-member-img img {
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover; /* Ensure the image covers the entire container */
+        width: 100%; /* Ensure the image fills the parent element */
+    }
+
+	.about-icon img {
+        overflow: hidden;
+        object-fit: cover; /* Ensure the image covers the entire container */
+        width: 20%; /* Ensure the image fills the parent element */
+		padding-right: 20px;
+		padding-bottom: 15px;
+    }
+
+    /* Format Team member*/
+    .team-member-info {
+        text-align: center;
+        font-family: Arial, sans-serif; /* Set font */
+		font-size: 20px;
+		font-weight: bold;
+		color: #000;
+		padding-top: 10px;
+    }	
+
+	/* Set Padding icon for id*/
+	#about-icon{
+		padding-top: 25px;
+	}
+
+	/* Set Image Icon for id */
+	#about-icon img{
+		padding-right: 20px;
+	}
+
+	/* Set Font Size */
+	#font-size{
+		font-size: 20px;
+	}
+
+	.background-gray{
+		background-color: rgb(231, 231, 231, 0.1);
+		padding: 30px;
+		background-image: url("images/background-image.png");
+		background-position: center;		
+	}
+
+	/* My Apology */
+	.bubble-chat {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+    .bubble-chat::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        border-style: solid;
+        border-width: 10px 10px 0;
+        border-color: #f0f0f0 transparent;
+        display: block;
+        width: 0;
+    }
+
+	.avatar {
+		position: relative;
+		perspective: 1000px; /* Create 3D effect */
+	}
+
+	.avatar img {
+		width: 100%;
+		height: auto;
+		transition: transform 0.5s ease;
+	}
+
+	.avatar:hover img {
+		transform: rotateY(180deg);
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+
+	.avatar .message {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(224, 224, 224, 0.7);
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	.avatar:hover .message {
+		opacity: 1; /* Display message on hover */
+	}
+
+	/* Button Facebook */
+	.block2-btn{
+		background-color: #FFEFEF;
+	}
+
+	@keyframes countup {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	/* Counter Number */
+	.counter-up {
+		animation: countup 1.5s ease-in-out;
+	}
+
+	/* Resize Icon fa-2xl */
+	.fa-2xl {
+    	font-size: 50px; /* or desired size */
+	}
+
+</style>
+
+
+<body class="animsition">
+	
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<!-- Topbar -->
+			<div class="top-bar">
+				<div class="content-topbar flex-sb-m h-full container">
+					<div class="left-top-bar stext-124">
+						<div class="d-inline-flex align-items-center">
+							<p style="color: #F4538A"><i class="fa fa-envelope mr-2"></i><a
+									href="mailto:omachacontact@gmail.com"
+									style="color: #000; text-decoration: none;">jollyjinglescontact@gmail.com</a></p>
+							<p class="text-body px-3">|</p>
+							<p style="color: #F4538A"><i class="fa fa-phone-alt mr-2"></i><a href="tel:+19223600"
+									style="color: #000; text-decoration: none;">+1922 4800</a></p>
+						</div>
+					</div>
+
+					<div class="col-lg-6 text-center text-lg-right">
+						<div class="d-inline-flex align-items-center">
+							<a class="text-primary px-3" href="https://www.facebook.com/profile.php?id=61557250007525"
+								target="_blank" title="Visit the Reis Adventures fanpage.">
+								<i style="color: #49243E;" class="fab fa-facebook-f"></i>
+							</a>
+							<a class="text-primary px-3" href="https://twitter.com/reis_adventures" target="_blank"
+								title="Visit the Reis Adventures Twitter.">
+								<i style="color: #49243E;" class="fab fa-twitter"></i>
+							</a>
+							<a class="text-primary px-3" href="https://www.linkedin.com/in/reis-adventures-458144300/"
+								target="_blank" title="Visit the Reis Adventures Linkedin.">
+								<i style="color: #49243E;" class="fab fa-linkedin-in"></i>
+							</a>
+							<a class="text-primary px-3"
+								href="https://www.instagram.com/reis_adventures2024?igsh=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr"
+								target="_blank" title="Visit the Reis Adventures Instagram.">
+								<i style="color: #49243E;" class="fab fa-instagram"></i>
+							</a>
+							<div class="data1">
+								<i style="color: #49243E;" class=""></i>
+								<a href="register.html" class="btn2 btn-primary2 mt-1" style="color: #49243E;"><b>Login
+										/</b></a>
+							</div>
+							<div class="data2">
+								<i style="color: #49243E;" class=""></i>
+								<a href="register.html" class="btn2 btn-primary2 mt-1"
+									style="color: #49243E;"><b>Register</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-menu-desktop" style="background-color: #507687;">
+				<nav class="limiter-menu-desktop container" style="background-color: #507687;">
+
+					<!-- Logo desktop -->
+					<a href="index.html" class="navbar-brand">
+						<h1 class="m-0 text-primary1 mt-3 "><span class="text-dark1"><img class="Imagealignment"
+									src="images/icon.png">Jolly Jingles</h1>
+					</a>
+
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu">
+							<li class="active-menu">
+								<a href="index.html">Home</a>
+
+							</li>
+
+							<li class="label1" data-label1="hot">
+								<a href="product">Shop</a>
+								<ul class="sub-menu">
+									<li><a href="index.html">Homepage 1</a></li>
+									<li><a href="home-02.html">Homepage 2</a></li>
+									<li><a href="home-03.html">Homepage 3</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+
+							<li>
+								<a href="about.html">Pages</a>
+								<ul class="sub-menu">
+									<li><a href="index.html">About</a></li>
+									<li><a href="home-02.html">Faq</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Icon header -->
+					<div class="wrap-icon-header flex-w flex-r-m">
+						<div class="icon-header-item cl13 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+							<i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffae3d;"></i>
+						</div>
+
+						<div class="icon-header-item cl13 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+							data-notify="2">
+							<i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffae3d;"></i>
+						</div>
+
+						<a href="#"
+							class="dis-block icon-header-item cl13 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+							data-notify="0">
+							<i class="fa-regular fa-heart fa-sm" style="color: #ffae3d;"></i>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap-header-mobile">
+			<!-- Logo moblie -->
+			<div class="logo-mobile">
+				<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+			</div>
+
+			<!-- Icon header -->
+			<div class="wrap-icon-header flex-w flex-r-m m-r-15">
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
+					<i class="zmdi zmdi-search"></i>
+				</div>
+
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
+					data-notify="2">
+					<i class="zmdi zmdi-shopping-cart"></i>
+				</div>
+
+				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
+					data-notify="0">
+					<i class="zmdi zmdi-favorite-outline"></i>
+				</a>
+			</div>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</div>
+		</div>
+
+
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="topbar-mobile">
+				<li>
+					<div class="left-top-bar ">
+						Free shipping for standard order over $100
+					</div>
+				</li>
+
+				<li>
+					<div class="right-top-bar flex-w h-full">
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							Help & FAQs
+						</a>
+
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							My Account
+						</a>
+
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							EN
+						</a>
+
+						<a href="#" class="flex-c-m p-lr-10 trans-04">
+							USD
+						</a>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="main-menu-m">
+				<li>
+					<a href="index.html">Home</a>
+					<ul class="sub-menu-m">
+						<li><a href="index.html">Homepage 1</a></li>
+						<li><a href="home-02.html">Homepage 2</a></li>
+						<li><a href="home-03.html">Homepage 3</a></li>
+					</ul>
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li>
+					<a href="product">Shop</a>
+				</li>
+
+				<li>
+					<a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+				</li>
+
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+
+				<li>
+					<a href="about.html">About</a>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Modal Search -->
+		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+			<div class="container-search-header">
+				<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+					<img src="images/icons/icon-close2.png" alt="CLOSE">
+				</button>
+
+				<form class="wrap-search-header flex-w p-l-15">
+					<button class="flex-c-m trans-04">
+						<i class="zmdi zmdi-search"></i>
+					</button>
+					<input class="plh3" type="text" name="search" placeholder="Search...">
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<!-- Cart -->
+	<div class="wrap-header-cart js-panel-cart">
+		<div class="s-full js-hide-cart"></div>
+
+		<div class="header-cart flex-col-l p-l-65 p-r-25">
+			<div class="header-cart-title flex-w flex-sb-m p-b-8">
+				<span class="mtext-103 cl2">
+					Your Cart
+				</span>
+
+				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
+					<i class="zmdi zmdi-close"></i>
+				</div>
+			</div>
+			
+			<div class="header-cart-content flex-w js-pscroll">
+				<ul class="header-cart-wrapitem w-full">
+					<li class="header-cart-item flex-w flex-t m-b-12">
+						<div class="header-cart-item-img">
+							<img src="images/item-cart-01.jpg" alt="IMG">
+						</div>
+
+						<div class="header-cart-item-txt p-t-8">
+							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+								White Shirt Pleat
+							</a>
+
+							<span class="header-cart-item-info">
+								1 x $19.00
+							</span>
+						</div>
+					</li>
+
+					<li class="header-cart-item flex-w flex-t m-b-12">
+						<div class="header-cart-item-img">
+							<img src="images/item-cart-02.jpg" alt="IMG">
+						</div>
+
+						<div class="header-cart-item-txt p-t-8">
+							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+								Converse All Star
+							</a>
+
+							<span class="header-cart-item-info">
+								1 x $39.00
+							</span>
+						</div>
+					</li>
+
+					<li class="header-cart-item flex-w flex-t m-b-12">
+						<div class="header-cart-item-img">
+							<img src="images/item-cart-03.jpg" alt="IMG">
+						</div>
+
+						<div class="header-cart-item-txt p-t-8">
+							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+								Nixon Porter Leather
+							</a>
+
+							<span class="header-cart-item-info">
+								1 x $17.00
+							</span>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="w-full">
+					<div class="header-cart-total w-full p-tb-40">
+						Total: $75.00
+					</div>
+
+					<div class="header-cart-buttons flex-w w-full">
+						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+							View Cart
+						</a>
+
+						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+							Check Out
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Title page -->
+	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/background-image.png');">
+		<h2 style="color: #000;" class="ltext-105 cl0 txt-center">
+			Products
+		</h2>
+	</section>	
+
+	<div class="bg0 m-t-23 p-b-140">
+		<div class="container">
+			<div class="flex-w flex-sb-m p-b-52">
+				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+						All Products
+					</button>
+
+				</div>
+
+				<div class="flex-w flex-c-m m-tb-10">
+					<div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter" style="border-radius: 40px;">
+						<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
+						<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+						Filter
+					</div>
+
+					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search" style="border-radius: 40px;">
+						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
+						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+						Search
+
+					</div>
+				</div>
+
+				<!-- Search product -->
+				<div class="dis-none panel-search w-full p-t-10 p-b-15">
+					<div class="bor8 dis-flex p-l-15" style="border-radius:20px">
+						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+							<i class="zmdi zmdi-search"></i>
+						</button>
+
+						<input id="searchproduct" class="mtext-107 cl2 size-114 plh2 p-r-15 nutsearch" type="text" name="search-product" placeholder="Search">
+
+						<button class="mybtn" id="buttonsearch_an">
+							<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search" style="width:40px;"></i>
+						</button>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row isotope-grid">
+				<section class="showproduct">
+					<!-- Nội dung của phần này chưa được cung cấp -->
+				</section>
+			
+				<section class="disproduct">
+					<div class="product-row">
+						<% if (products && products.length > 0) { %>
+							<% products.forEach((product, index) => { %>
+								<!-- Sản phẩm -->
+								<div class="product-item col-3">
+									<!-- Block2 -->
+									<div class="block2 stext-301">
+										<form method="POST" action="productdetail">
+											<!-- Hình ảnh sản phẩm -->
+											<div id="product-<%= index + 1 %>" class="block2-pic hov-img0" style="border: 0.1px dashed #000; border-radius: 50px;">
+												<img src="<%= product.image %>" alt="IMG-PRODUCT">
+											</div>
+											<!-- Thông tin sản phẩm -->
+											<div class="block2-txt flex-w flex-t p-t-14">
+												<div class="block2-txt-child1 flex-col-l">
+													<input class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"
+														   style="background-color: white;" 
+														   type="submit" name="p_name" value="<%= product.type %>">
+													<p class="stext-105 cl4 hov-cl1 trans-04 js-name-b2 p-b-6 text1"><%= product.name %></p>
+													<span class="stext-104 cl3 price">$<%= product.price ? product.price.toFixed(2) : 'N/A' %></span>
+												</div>
+												<div class="block2-txt-child2 flex-r p-t-3">
+													<!-- Biểu tượng yêu thích -->
+													<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+														<img class="icon-heart1 dis-block trans-04" src="images/icon-heart-01.png" alt="ICON">
+														<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icon-heart-02.png" alt="ICON">
+													</a>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							<% }) %>
+						<% } else { %>
+							<h1 class="text-center text-secondary mt-5">No product found in the database</h1>
+						<% } %>
+					</div>
+				</section>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- Content page -->
+	
+	
+
+	<!-- footer -->
+	
+
+	<footer class="bg3 p-t-75 p-b-32">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl10 p-b-30">
+						Legal
+					</h4>
+
+					<ul>
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Faq
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Retailers
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Privacy Policy
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Cookies
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl10 p-b-30">
+						Services
+					</h4>
+
+					<ul>
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Track Order
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Returns
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								Shipping
+							</a>
+						</li>
+
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+								FAQs
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl10 p-b-30">
+						GET IN TOUCH
+					</h4>
+
+					<p class="stext-107 cl7 size-201">
+						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us
+						on (+1) 96 716 6879
+					</p>
+
+					<div class="p-t-27">
+						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+							<i class="fa-duotone fa-solid fa-fire fa-bounce fa-xl" style="--fa-primary-color: #af1908; --fa-secondary-color: #ec897e;"></i>
+						</a>
+
+						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+							<i class="fa-duotone fa-solid fa-stars fa-bounce fa-xl" style="--fa-primary-color: #af1908; --fa-secondary-color: #ec897e;"></i>
+						</a>
+
+						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+							<i class="fa-duotone fa-solid fa-face-grin-stars fa-bounce fa-xl" style="--fa-primary-color: #af1908; --fa-secondary-color: #ec897e;"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<h4 class="stext-301 cl10 p-b-30">
+						Newsletter
+					</h4>
+
+					<form>
+						<div class="wrap-input1 w-full p-b-4">
+							<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email"
+								placeholder="email@example.com">
+							<div class="focus-input1 trans-04"></div>
+						</div>
+
+						<div class="p-t-18">
+							<button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+								Subscribe
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			
+		</div>
+	</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa-duotone fa-solid fa-candy-cane fa-spin fa-xl" style="--fa-primary-color: #f10943; --fa-secondary-color: #f10943;"></i>
+		</span>
+	</div>
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			$(this).css('position','relative');
+			$(this).css('overflow','hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+
+		// Hieu ung con so chay
+		let countUser = 0;
+		const counterElementUser = document.getElementById('counter-user');
+
+		const intervalIdUser = setInterval(() => {
+			countUser = countUser + 6;
+			counterElementUser.textContent = countUser;
+			
+			if (countUser >= 500) {
+				clearInterval(intervalIdUser);
+			}
+		}, 15);
+
+		let countDelivery = 0;
+		const counterElementDelivery = document.getElementById('counter-delivery');
+
+		const intervalIdDelivery = setInterval(() => {
+			countDelivery = countDelivery + 9;
+			counterElementDelivery.textContent = countDelivery;
+			
+			if (countDelivery >= 750) {
+				clearInterval(intervalIdDelivery);
+			}
+		}, 15);
+
+		let countProduct = 0;
+		const counterElementProduct = document.getElementById('counter-product');
+
+		const intervalIdProduct = setInterval(() => {
+			countProduct = countProduct + 7;
+			counterElementProduct.textContent = countProduct;
+			
+			if (countProduct >= 650) {
+				clearInterval(intervalIdProduct);
+			}
+		}, 15);
+
+		let countSold = 0;
+		const counterElementSold = document.getElementById('counter-sold');
+
+		const intervalIdSold = setInterval(() => {
+			countSold = countSold + 21;
+			counterElementSold.textContent = countSold;
+			
+			if (countSold >= 2000) {
+				clearInterval(intervalIdSold);
+			}
+		}, 15);
+
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
