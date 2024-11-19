@@ -93,7 +93,7 @@ db.products.find();
 
 ## Available Routes
 ### Public Routes
-- `/` - Login Page
+- `/`Login Page
 - `/`register - User Registration
 - `/`homepageUser - User Homepage
 - `/`product - Product Listing
