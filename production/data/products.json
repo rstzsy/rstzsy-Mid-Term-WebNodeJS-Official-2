@@ -2,9 +2,7 @@
 {"_id":{"$oid":"673b75682303fee6398f4bc6"},"name":"Christmas stocking","price":3,"type":"Cotton","image":"1731949928167_Christmas stocking.png","created":{"$date":"2024-11-18T17:12:08.196Z"},"__v":0}
 {"_id":{"$oid":"673b75832303fee6398f4bc9"},"name":"Christmas bell","price":5,"type":"Metal","image":"1731949955202_Christmas bell.png","created":{"$date":"2024-11-18T17:12:35.234Z"},"__v":0}
 {"_id":{"$oid":"673b75a52303fee6398f4bcc"},"name":"Christmas chocolate","price":3,"type":"Cotton","image":"1731949989404_hot chocolate.png","created":{"$date":"2024-11-18T17:13:09.43Z"},"__v":0}
-{"_id":{"$oid":"673ba06a747f6c09adf736ea"},"name":"baby","price":100,"type":"lalaa","image":"1731960938353_introduction1.jpg","created":{"$date":"2024-11-18T20:15:38.377Z"},"__v":0}
-{"_id":{"$oid":"673bb11e866913817d9df096"},"name":"test cai roi ngu","price":123,"type":"hehhee","image":"1731965214542_intro2.jpg","created":{"$date":"2024-11-18T21:26:54.583Z"},"__v":0}
-{"_id":{"$oid":"673bb177866913817d9df0ad"},"name":"qua met","price":123,"type":"ngu","image":"1731965303260_intro3.jpg","created":{"$date":"2024-11-18T21:28:23.281Z"},"__v":0}
-{"_id":{"$oid":"673bb1a4866913817d9df0b2"},"name":"ngu thiet a nha","price":123,"type":"ngu","image":"1731965348784_snow globe.png","created":{"$date":"2024-11-18T21:29:08.824Z"},"__v":0}
-
-
+{"_id":{"$oid":"673ba06a747f6c09adf736ea"},"name":"Snow globe","price":2,"type":"Glass","image":"1731999425159_snow globe.png","created":{"$date":"2024-11-18T20:15:38.377Z"},"__v":0}
+{"_id":{"$oid":"673bb11e866913817d9df096"},"name":"Christmas ball","price":3,"type":"Glass","image":"1731999465591_Christmas ball.png","created":{"$date":"2024-11-18T21:26:54.583Z"},"__v":0}
+{"_id":{"$oid":"673bb177866913817d9df0ad"},"name":"Christmas Doll ","price":4,"type":"Cotton","image":"1731999522363_Doll.png","created":{"$date":"2024-11-18T21:28:23.281Z"},"__v":0}
+{"_id":{"$oid":"673bb1a4866913817d9df0b2"},"name":"Santa Stocking","price":2,"type":"Cotton","image":"1731999577106_intro1.jpg","created":{"$date":"2024-11-18T21:29:08.824Z"},"__v":0}

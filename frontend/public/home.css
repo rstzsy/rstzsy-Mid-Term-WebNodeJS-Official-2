@@ -4785,3 +4785,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   align-items: center;
 }
 
+.header-cart-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+

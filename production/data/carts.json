@@ -1,3 +1,3 @@
-{"_id":{"$oid":"673bffb9236edff8eec43f70"},"name":"Christmas stocking","price":3,"type":"Cotton","image":"1731949928167_Christmas stocking.png","__v":0}
-{"_id":{"$oid":"673bffbf236edff8eec43f74"},"name":"Cozy glass","price":2,"type":"Glass","image":"1731949903373_Cozy glass.png","__v":0}
-{"_id":{"$oid":"673bffc2236edff8eec43f78"},"name":"Christmas chocolate","price":3,"type":"Cotton","image":"1731949989404_hot chocolate.png","__v":0}
+{"_id":{"$oid":"673c37d7c9251bb5afe4c9a1"},"name":"Cozy glass","price":2,"type":"Glass","image":"1731949903373_Cozy glass.png","__v":0}
+{"_id":{"$oid":"673c37dac9251bb5afe4c9a5"},"name":"Christmas Doll ","price":4,"type":"Cotton","image":"1731999522363_Doll.png","__v":0}
+{"_id":{"$oid":"673c37ddc9251bb5afe4c9a9"},"name":"Christmas stocking","price":3,"type":"Cotton","image":"1731949928167_Christmas stocking.png","__v":0}
