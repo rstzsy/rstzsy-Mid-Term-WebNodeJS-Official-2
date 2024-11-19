@@ -10,6 +10,7 @@ const loginRouter = require('./routes/loginRouter');
 const registerRouter = require('./routes/registerRouter');
 const productRouterAdmin = require('./routes/productRouter');
 const adminRouter = require('./routes/adminRouter');
+const cartRouter = require('./routes/cartRouter');
 const Product = require('./modles/product');
 
 
@@ -39,7 +40,7 @@ app.use((req, res, next) => {
   next();
 });
 
-
+app.use('/', cartRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/index', adminRouter);

@@ -234,6 +234,12 @@
     	font-size: 50px; /* or desired size */
 	}
 
+    #thank-you{
+        color:black;
+        padding: 5px;
+        text-align: center;
+    }
+
 </style>
 
 
@@ -538,104 +544,61 @@
 	
 
 
-	<!-- Title page -->
-	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/background-image.png');">
-		<h2 style="color: #000;" class="ltext-105 cl0 txt-center">
-			Products
-		</h2>
-	</section>	
+	<!-- Checkout Page -->
+    <form class="bg0 p-t-75 p-b-85">
+        <div class="container">
+            <h1 id="thank-you">Thank You!</h1>
+            <p id="thank-you">Your order has been successfully placed.</p>
+            <p style="padding-bottom: 10px;" id="thank-you">We appreciate your business and look forward to serving you again.</p>
+            
+            <table style="width:100%" class="table-shopping-cart">
+                <tr class="table_head">
+                    <th class="column-1">Product</th>
+                    <th class="column-2">Name</th>
+                    <th class="column-3">Price</th>
+                    <th class="column-4">Quantity</th>
+                    <th class="column-5">Total</th>
+                </tr>
+    
+                <% cartItems.forEach(item => { %>
+                <tr class="table_row">
+                    <td class="column-1">
+                        <div class="how-itemcart1">
+                            <img src="<%= item.image %>" alt="IMG">
+                        </div>
+                    </td>
+                    <td class="column-2"><%= item.name %></td>
+                    <td class="column-3">$ <%= item.price.toFixed(2) %></td>
+                    <td class="column-4">1</td> <!-- Bạn có thể cập nhật số lượng nếu cần -->
+                    <td class="column-5">$ <%= item.price.toFixed(2) %></td>
+                </tr>
+                <% }); %>
+            </table>
+    
+            <div class="flex-w flex-t p-t-27 p-b-33">
+                <div class="size-208">
+                    <span class="mtext-101 cl2">Total:</span>
+                    <span class="mtext-110 cl2">$ <%= totalPrice.toFixed(2) %></span>
+                </div>
+            </div>
+    
+            <!-- Các tùy chọn thêm -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="/product" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">Back to Shopping</a>
+                </div>
+    
+                <div class="col-md-4">
+                    <a href="/confirm-order" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">Confirm Order</a>
+                </div>
+    
+                <div class="col-md-4">
+                    <a href="/export-pdf" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">Export to PDF</a>
+                </div>
+            </div>
+        </div>
+    </form>
 
-	<div class="bg0 m-t-23 p-b-140">
-		<div class="container">
-			<div class="flex-w flex-sb-m p-b-52">
-				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-						All Products
-					</button>
-
-				</div>
-
-				<div class="flex-w flex-c-m m-tb-10">
-					<div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter" style="border-radius: 40px;">
-						<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
-						<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						Filter
-					</div>
-
-					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search" style="border-radius: 40px;">
-						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
-						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						Search
-
-					</div>
-				</div>
-
-				<!-- Search product -->
-				<div class="dis-none panel-search w-full p-t-10 p-b-15">
-					<div class="bor8 dis-flex p-l-15" style="border-radius:20px">
-						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
-							<i class="zmdi zmdi-search"></i>
-						</button>
-
-						<input id="searchproduct" class="mtext-107 cl2 size-114 plh2 p-r-15 nutsearch" type="text" name="search-product" placeholder="Search">
-
-						<button class="mybtn" id="buttonsearch_an">
-							<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search" style="width:40px;"></i>
-						</button>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="row isotope-grid">
-				<section class="showproduct">
-					<!-- Nội dung của phần này chưa được cung cấp -->
-				</section>
-			
-				<section class="disproduct">
-					<div class="product-row">
-						<% if (products && products.length > 0) { %>
-							<% products.forEach((product, index) => { %>
-								<!-- Sản phẩm -->
-								<div class="product-item col-3">
-									<!-- Block2 -->
-									<div class="block2 stext-301">
-										<form method="POST" action="productdetail">
-											<!-- Hình ảnh sản phẩm -->
-											<div id="product-<%= index + 1 %>" class="block2-pic hov-img0" style="border: 0.1px dashed #000; border-radius: 50px;">
-												<img src="<%= product.image %>" alt="IMG-PRODUCT">
-											</div>
-											<!-- Thông tin sản phẩm -->
-											<div class="block2-txt flex-w flex-t p-t-14">
-												<div class="block2-txt-child1 flex-col-l">
-													<input class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"
-														   style="background-color: white;" 
-														   type="submit" name="p_name" value="<%= product.name %>">
-													<p class="stext-105 cl4 hov-cl1 trans-04 js-name-b2 p-b-6 text1"><%= product.type %></p>
-													<span class="stext-104 cl3 price">$<%= product.price ? product.price.toFixed(2) : 'N/A' %></span>
-												</div>
-												<div class="block2-txt-child2 flex-r p-t-3">
-													<a href="/add-to-cart?name=<%= encodeURIComponent(product.name) %>&price=<%= product.price %>&type=<%= encodeURIComponent(product.type) %>&image=<%= encodeURIComponent(product.image) %>">
-														<i class="fa-duotone fa-solid fa-cart-shopping fa-xl" 
-														   style="--fa-primary-color: #f02878; --fa-secondary-color: #f02878;"></i>
-													</a>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							<% }) %>
-						<% } else { %>
-							<h1 class="text-center text-secondary mt-5">No product found in the database</h1>
-						<% } %>
-					</div>
-				</section>
-				
-				
-			</div>
-		</div>
-	</div>
-	<!-- Content page -->
 	
 	
 

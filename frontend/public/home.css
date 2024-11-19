@@ -4765,3 +4765,23 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
     margin: 0 auto; /* Căn giữa hình ảnh */
   }
   
+/* Nút xóa sản phẩm */
+.btn-delete {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #ff0000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-delete:hover {
+  color: #cc0000;
+}
+
+.header-cart-item-remove {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
