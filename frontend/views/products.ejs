@@ -27,7 +27,7 @@
                             <% products.forEach((row, index) => { %>
                                 <tr>
                                     <td><%= index + 1 %></td>
-                                    <td><img src="<%= row.image %>" width="50" class="image-thumbnail" alt="Product Image"></td>
+                                    <td><img src="/uploads/<%= row.image %>" width="50" class="image-thumbnail" alt="Product Image"></td>
                                     <td><%= row.name  %></td>
                                     <td>$<%= row.price ? row.price.toFixed(2) : 'N/A' %></td>                                    
                                     <td><%= row.type %></td>
