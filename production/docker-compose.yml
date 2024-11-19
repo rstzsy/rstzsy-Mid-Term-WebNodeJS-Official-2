@@ -43,6 +43,8 @@ services:
       - "28017:27017"
     networks:
       - midterm-network  
+    volumes:
+    - ./data:/data/backup
   
   nginx:
     build: 

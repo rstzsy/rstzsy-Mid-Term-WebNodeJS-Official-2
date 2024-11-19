@@ -1,0 +1,2 @@
+{"_id":{"$oid":"673b783c10de8fc6d61d58ac"},"name":"khanh","email":"khanh@gmail.com","password":"$2a$10$MCiD1CmOSPHgcyPIs5T7Cuo/spfRiYWZKEUskQZPlTtz1tTgR.Dd2","created":{"$date":"2024-11-18T17:24:12.2Z"},"__v":0}
+{"_id":{"$oid":"673bffa9236edff8eec43f68"},"name":"nopbai","email":"nopbai@gmail.com","password":"$2a$10$mT/JFAAdMdS52XizOq5Kl.vcI0BraSHkxkSEoyIp1NO2RYg1u7KFS","created":{"$date":"2024-11-19T03:02:01.13Z"},"__v":0}
